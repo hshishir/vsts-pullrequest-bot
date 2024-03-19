@@ -1,0 +1,57 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "vseng-servicefabric"
+    },
+    "fabricTcpGatewayPort": {
+      "value": 19000
+    },
+    "fabricHttpGatewayPort": {
+      "value": 19080
+    },
+    "adminUserName": {
+      "value": "vseng-fabricAdmin"
+    },
+    "loadBalancedAppPort1": {
+      "value": 80
+    },
+    "loadBalancedAppPort2": {
+      "value": 8081
+    },
+    "certificateStorevalue": {
+      "value": "My"
+    },
+    "certificateThumbprint": {
+      "value": "74E543E8C35132D93043FE513C5F816B2106416C"
+    },
+    "sourceVaultvalue": {
+      "value": "/subscriptions/a47a4531-9906-40fe-a0f0-e96fd85f2dda/resourceGroups/VSEng-PullRequestBot/providers/Microsoft.KeyVault/vaults/VSEng-PullRequestBot"
+    },
+    "certificateUrlvalue": {
+      "value": "https://vseng-pullrequestbot.vault.azure.net:443/secrets/AADCert/4a3be1411dc540f0a7df842c4d9bc2d4"
+    },
+    "aadTenantId": {
+      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+    },
+    "aadClusterApplicationId": {
+      "value": "c31432cc-a3ee-4811-8747-42c502f83313"
+    },
+    "aadClientApplicationId": {
+      "value": "038daeb5-0863-43d4-8965-752e3206e1cb"
+    },
+    "clusterProtectionLevel": {
+      "value": "EncryptAndSign"
+    },
+    "storageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "supportLogStorageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "applicationDiagnosticsStorageAccountType": {
+      "value": "Standard_LRS"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Settings">
+    <!-- Authentication with KeyVault -->
+    <Parameter Name="KeyVaultClientId" Value="3fa62f3b-1a24-4d7f-9998-5efcddf27f95" />
+    <Parameter Name="KeyVaultCertThumbprint" Value="74E543E8C35132D93043FE513C5F816B2106416C" />
+    <!-- Secrets to read from KeyVault -->
+    <Parameter Name="KeyVaultPersonalAccessTokenSecretId" Value="https://vseng-pullrequestbot-pat.vault.azure.net:443/secrets/PAT" />
+    <!-- Application Insights instrumentation key -->
+    <Parameter Name="TelemetryInstrumentationKey" Value="075c2c3e-1538-479a-9abe-2b2dafde70b8" />
+  </Section>
+  <Section Name="AutoCompleteActorServiceReplicatorConfig">
+    <Parameter Name="ReplicatorEndpoint" Value="AutoCompleteActorServiceReplicatorEndpoint" />
+    <Parameter Name="BatchAcknowledgementInterval" Value="0.005" />
+  </Section>
+  <Section Name="AutoCompleteActorServiceReplicatorSecurityConfig">
+    <Parameter Name="CredentialType" Value="None" />
+  </Section>
+  <!-- The content will be generated during build -->
+</Settings>

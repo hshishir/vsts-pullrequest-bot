@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/PullRequestBot" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="NotificationProcessorType_InstanceCount" Value="1" />
+    <Parameter Name="MergeConflictActorService_PartitionCount" Value="1" />
+    <Parameter Name="MergeConflictActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="MergeConflictActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="RevisionTextWarningActorService_PartitionCount" Value="1" />
+    <Parameter Name="RevisionTextWarningActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="RevisionTextWarningActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="AbandonActorService_PartitionCount" Value="1" />
+    <Parameter Name="AbandonActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="AbandonActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="AutoCompleteActorService_PartitionCount" Value="1" />
+    <Parameter Name="AutoCompleteActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="AutoCompleteActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="TargetBranchUpdateActorService_PartitionCount" Value="1" />
+    <Parameter Name="TargetBranchUpdateActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="TargetBranchUpdateActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="BatmonUrlActorService_PartitionCount" Value="1" />
+    <Parameter Name="BatmonUrlActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="BatmonUrlActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="GeneralTasksActorService_PartitionCount" Value="1" />
+    <Parameter Name="GeneralTasksActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="GeneralTasksActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="OptprofWarningActorService_PartitionCount" Value="1" />
+    <Parameter Name="OptprofWarningActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="OptprofWarningActorService_MinReplicaSetSize" Value="1" />
+  </Parameters>
+</Application>
